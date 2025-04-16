@@ -15,4 +15,16 @@ public interface PostMapper {
     
 //    게시글 단일 조회
     public Optional<PostDTO> selectById(Long id);
+
+//    게시글 작성
+    public void insert(PostVO postVO);
+
+//    게시글 수정
+    public void update(PostVO postVO);
+
+//    게시글 삭제
+    public void delete(Long id);
+
+//    게시글 삭제(회원 탈퇴 시)
+    public void deleteAll(Long memberId);
 }
