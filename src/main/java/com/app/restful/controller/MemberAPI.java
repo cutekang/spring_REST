@@ -42,12 +42,6 @@ public class MemberAPI {
     
 //    회원 가입
     @Operation(summary = "회원 가입", description = "회원가입을 위한 API")
-    @Parameter(
-            name = "memberVO",
-            description = "회원 정보",
-            schema = @Schema(type = "Object"),
-            required = true
-    )
     @ApiResponse(responseCode = "200", description = "회원가입 성공")
     @PostMapping("join")
     public void join(@RequestBody MemberVO memberVO) {
@@ -56,12 +50,6 @@ public class MemberAPI {
 
 //    회원정보 수정
     @Operation(summary = "회원정보 수정", description = "회원정보 수정을 위한 API")
-    @Parameter(
-            name = "memberVO",
-            description = "회원 정보",
-            schema = @Schema(type = "MemberVO"),
-            required = true
-    )
     @PutMapping("modify")
     public void update(@RequestBody MemberVO memberVO) {
         memberService.modify(memberVO);
