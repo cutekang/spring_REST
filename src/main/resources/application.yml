@@ -27,3 +27,10 @@ spring:
           allowed-methods: "*"
           allowed-headers: "*"
           allow-credentials: true
+  api:
+    base-url: "https://apis.data.go.kr/B551011/KorPetTourService"
+    base-url2: "https://api.odcloud.kr/api"
+    congestion-20171231: "/15071311/v1/uddi:a5158b81-27c7-4151-ba6c-b912a6f13d39"
+    area-based-List: "/areaBasedList"
+    service-key: "O7M3ojfsc5EkSltlZ1WGlpY1EwcPC%2FtTrzFafZIU0%2F57p9osynNDFH0f55Sg4hiFwkkFvAowoYoDhcQuKUCMbQ%3D%3D"
+    
